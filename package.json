@@ -1,0 +1,21 @@
+{
+  "name": "coolProject",
+  "version": "1.0.0",
+  "description": "fun awesome project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "author": "Vince Jones",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.4",
+    "express": "^4.12.3",
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-uglify": "^0.9.1",
+    "jquery": "^2.1.4",
+    "path": "^0.11.14"
+  }
+}
