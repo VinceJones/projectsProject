@@ -21,6 +21,8 @@ var campPicArray = ["<img src='../assets/images/campfire.png' height='250px' wid
 
 
 
+
+
 $(document).ready(function(){
 
 

@@ -1,10 +1,12 @@
  var i;
+ var min = 0;
+ var sec = 10;
+
     var value;
     var appleArray = [];
     var orangeArray = [];
     var bananaArray = [];
     var pearArray = [];
-
 
     var names = ["Apple", "Orange", "Banana", "Pear"];
     var fruitArray = [appleArray, orangeArray, bananaArray, pearArray];
@@ -75,10 +77,32 @@
         masterArray.push(newObject);
     }
 
+ function timer() {
+         setInterval(function(){
+             if (min >= 0 && sec >= 0) {
+                 sec--;
+                 if (sec < 10) {
+                     sec = "0" + sec;
+                 }
+                 $(".timeDisplay").html(min + ":" + sec);
+                 sec = parseInt(sec);
+                 if (sec < 1) {
+                     min--;
+                     sec = 60;
+                 }
+             } else {
+                 $(".timeDisplay").html("Times Up!");
+                 $(".displayFruitstand").empty();
+                 $(".displayFruitstand").html("You made $" + User.cash +"! Way to go!");
+             }
+         },1000);
+
+ }
+
     $(document).ready(function(){
 
-
-        $("#openButton").on("click", function(){
+        $("#openButton").on("click", function () {
+            timer();
             $(".basket").empty();
             $(".market").empty();
             for (i = 0; i < masterArray.length; i++) {
@@ -87,31 +111,31 @@
             }
 
             //------------ Changing Price in Market -----------------
-            setInterval(function() {
+            setInterval(function () {
                 // Clears the market display
                 $(".market").empty();
                 for (i = 0; i < masterArray.length; i++) {
-                    fruitDisplay( masterArray[i], fruitArray[i] );
+                    fruitDisplay(masterArray[i], fruitArray[i]);
                 }
-            },10000);
+            }, 10000);
             console.log(masterArray);
         });
 
 //------------------- Buy things ----------------------
 
-        $(".market").on('click', '.buyBtn', function(){
+        $(".market").on('click', '.buyBtn', function () {
             var btnName = $(this).data("id");
             console.log("Buy: " + btnName);
             $('.basket').empty();
 
             for (i = 0; i < masterArray.length; i++) {
-                if (masterArray[i].name == btnName){
+                if (masterArray[i].name == btnName) {
 
                     console.log("Master array name: " + masterArray[i].name);
 
                     User.cash = User.cash - masterArray[i].price;
 
-                    if (User.cash > 0 ) {
+                    if (User.cash > 0) {
                         masterArray[i].quantity++;
                         fruitArray[i].push(masterArray[i].price);
 
@@ -127,17 +151,17 @@
         });
 
 //------------------- Sell Things --------------------
-        $('.basket').on('click', '.sellBtn', function(){
+        $('.basket').on('click', '.sellBtn', function () {
             var btnName = $(this).data("id");
             console.log("Sell: " + btnName);
             $('.basket').empty();
 
             for (i = 0; i < masterArray.length; i++) {
-                if (masterArray[i].name == btnName){
+                if (masterArray[i].name == btnName) {
 
                     User.cash = User.cash + masterArray[i].price;
 
-                    if (masterArray[i].quantity > 0 ) {
+                    if (masterArray[i].quantity > 0) {
                         masterArray[i].quantity--;
                         fruitArray[i].pop(masterArray[i].price);
 
@@ -154,4 +178,5 @@
 
 //------------------- Display Cash -------------------
         $("#totalCash").text("How much money you have: $" + User.cash);
+
     });

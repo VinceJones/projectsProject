@@ -26,6 +26,12 @@ img {
     margin: 0px auto;
 }
 
+.timeDisplay {
+    color: white;
+    font-size: 32px;
+    margin: 0px auto;
+}
+
 
 /* Fruitstand styles*/
 .userDisplay {
