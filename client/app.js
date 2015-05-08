@@ -4,9 +4,9 @@ var i = 0;
 var j = 0;
 var k = 0;
 
-var sewingPicArray = ["<img src='../assets/images/pinkAnorak.png' height='250px' width='200px'>",
-                      "<img src='../assets/images/blackAnorak.png' height='250px' width='200px'> ",
-                      "<img src='../assets/images/whiteAnorak.png' height='250px' width='300px'>",
+var sewingPicArray = ["<img src='../assets/images/pinkAnorak.png' height='250px' width='180px'>",
+                      "<img src='../assets/images/blackAnorak.png' height='250px' width='180px'> ",
+                      "<img src='../assets/images/whiteAnorak.png' height='250px' width='320px'>",
                       "<img src='../assets/images/vest.png' height='250px' width='200px'>"];
 
 var cookPicArray = ["<img src='../assets/images/butcherPig.png' height='250px' width='200px'>",
@@ -14,11 +14,11 @@ var cookPicArray = ["<img src='../assets/images/butcherPig.png' height='250px' w
                     "<img src='../assets/images/dateGrape.png' height='250px' width='300px'>",
                     "<img src='../assets/images/lambDish.png' height='250px' width='300px'>"];
 
-var campPicArray = ["<img src='../assets/images/campfire.png' height='250px' width='200px'>",
-                    "<img src='../assets/images/hammock.png' height='250px' width='200px'>",
-                    "<img src='../assets/images/parachute.png' height='250px' width='200px'>",
-                    "<img src='../assets/images/loganPass.png' height='250px' width='200px'>",
-                    "<img src='../assets/images/yellowStone.png' height='250px' width='200px'>"];
+var campPicArray = ["<img src='../assets/images/campfire.png' height='250px' width='275px'>",
+                    "<img src='../assets/images/hammock.png' height='250px' width='225px'>",
+                    "<img src='../assets/images/parachute.png' height='250px' width='250px'>",
+                    "<img src='../assets/images/loganPass.png' height='250px' width='300px'>",
+                    "<img src='../assets/images/yellowStone.png' height='250px' width='300px'>"];
 
 $(document).ready(function(){
 
