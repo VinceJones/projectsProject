@@ -6,17 +6,16 @@ pictures and also some descriptions of these projects.
 
 ###Projects
 
-####Apps to build
-    * D&D character builder app
-
-####1977 Chevy c10 Pick-up
-    * Get my truck to run
 
 ####Anoraks
-    * Build an inventory of anoraks
+    * This content will have a short description of what the anoraks are and pictures of some that I have made. There
+     will also be a picture of one being used to traverse a mountain.
 
 ####Camping
-    * Pictures of trips
+    * This content will describe some of my trips and things that I like to do while camping. There will be a
+    carousel of pictures from trips.
 
 ####Cooking
-    * this will contain things that I have cooked over the years
+    * This content will talk about my appreciation for cooking. There will be a carousel of pictures of things that I
+     have cooked over the years.
+
