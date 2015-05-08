@@ -40,7 +40,7 @@ module.exports = function(grunt) {
                             "jquery/dist/jquery.min.js",
                             "jquery/dist/jquery.min.map"
                         ],
-                        "dest": "server/public/vendors/jquery"
+                        "dest": "server/public/vendors"
                     },
                     {
                         expand: true,

@@ -1,0 +1,20 @@
+.header div {
+    height: 75px;
+    width: 500px;
+    float: left;
+    margin-left: 10%;
+}
+
+.camping img{
+    height: 200px;
+    width: 250px;
+}
+
+.cooking img {
+    height: 200px;
+    width: 250px;
+}
+
+p {
+    color: white;
+}
