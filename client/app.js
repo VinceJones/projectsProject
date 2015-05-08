@@ -55,6 +55,6 @@ $(document).ready(function(){
     },5000);
 
     $(".fruitStand").on('click', ".startFruit", function(){
-        $(".displayFruitstand").toggleClass("hidden");
+        $(".displayFruitstand").fadeToggle("slow").toggleClass("hidden");
     });
 });
