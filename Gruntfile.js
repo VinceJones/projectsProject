@@ -49,6 +49,14 @@ module.exports = function(grunt) {
                             "styles.css"
                         ],
                         "dest": "server/public/assets/styles"
+                    },
+                    {
+                        expand: true,
+                        cwd: "client/",
+                        src: [
+                            "fruitStand.js"
+                        ],
+                        "dest": "server/public/assets/scripts"
                     }
                 ]
             }

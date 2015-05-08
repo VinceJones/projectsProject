@@ -13,3 +13,90 @@ img {
     display: block;
     margin: 0px auto;
 }
+
+.hidden {
+    display: none;
+}
+.startFruit {
+    display: block;
+    margin: 10px auto;
+}
+
+.nav-tabs {
+    margin: 0px auto;
+}
+
+
+/* Fruitstand styles*/
+.userDisplay {
+    text-align: center;
+    width: 49%;
+    height: 80%;
+    float: right;
+    margin: 10px auto 10px auto;
+    background-color: rgba(0, 0, 255, .9);
+    border-radius: 15px;
+}
+
+.basket  {
+    width: 49%;
+    height: 80%;
+    margin: 10px auto 10px auto;
+    display: block;
+    background-color: rgba(0, 0, 0, .75);
+    border-radius: 15px;
+}
+.market{
+    width: 49%;
+    height: 80%;
+    margin: 10px auto 10px auto;
+    display: block;
+    background-color: rgba(0, 0, 0, .75);
+    border-radius: 15px;
+}
+
+.fruitMarket {
+    text-align: center;
+    width: 49%;
+    height: 80%;
+    float: left;
+    margin: 10px auto 10px auto;
+    background-color: rgba(0, 200, 50, .9);
+    border-radius: 15px;
+}
+
+.fruitStand h1 {
+    font-size: 30px;
+}
+
+label {
+    display: inline;
+    font-size: 46px;
+    margin: 10px;
+}
+
+.fruitStand p {
+    display: inline;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.fruitStand button {
+    margin: 10px auto 10px auto;
+    border-radius: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+#openButton {
+    display: block;
+    margin: 10px auto 10px auto;
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.fruitStand img {
+    display: inline;
+}

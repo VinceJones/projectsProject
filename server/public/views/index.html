@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="../vendors/bootstrap/dist/css/bootstrap.cyborg.min.css">
     <link rel="stylesheet" href="../assets/styles/styles.css">
 
-    <script type="text/javascript" src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../vendors/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../assets/scripts/app.min.js"></script>
+    <script type="text/javascript" src="../assets/scripts/fruitStand.js"></script>
 
 </head>
 
@@ -19,7 +20,15 @@
         are done with some of these will never quite be done. But I enjoy doing all them when I can</p></div>
     </div>
 
-    <div class="container content">
+    <div role="tabpanel">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="#personalInfo" data-toggle="tab">Home</a></li>
+        <li><a href="#game" data-toggle="tab">Fruit Stand App</a></li>
+        <li class="disabled"><a>Things to come...</a></li>
+    </ul>
+
+    <div class="tab-content">
+    <div role="tabpanel" class="container tab-pane active content" id="personalInfo">
         <div class="row">
             <div class="camping col-md-4">
                 <div class="campPics"></div>
@@ -45,10 +54,33 @@
                     play around with, I've learned to respect an animal and use it to the best of my abilities.
                 </blockquote>
             </div>
+        </div>
+    </div>
 
+        <div role="tabpanel" class="fruitStand tab-pane" id="game">
+            <button class="btn-lg btn-warning startFruit">Play Fruit Stand App</button>
+            <div class="displayFruitstand hidden">
+                <button id="openButton">Open Market</button>
+                <div class="container">
 
+                    <div class="fruitMarket">
+                        <h1>Market</h1>
+                        <div class="market"></div>
+                    </div>
+
+                    <div class="userDisplay">
+                        <h1>Basket</h1>
+                        <div class="basket"></div>
+                        <div class="cash">
+                            <div id="totalCash"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
+    </div>
     </div>
 </body>
 

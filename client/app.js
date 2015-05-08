@@ -1,4 +1,3 @@
-console.log("This runs");
 
 var i = 0;
 var j = 0;
@@ -20,7 +19,10 @@ var campPicArray = ["<img src='../assets/images/campfire.png' height='250px' wid
                     "<img src='../assets/images/loganPass.png' height='250px' width='300px'>",
                     "<img src='../assets/images/yellowStone.png' height='250px' width='300px'>"];
 
+
+
 $(document).ready(function(){
+
 
     $(".sewPics").html(sewingPicArray[0]);
     setInterval(function(){
@@ -52,4 +54,7 @@ $(document).ready(function(){
         $(".campPics").fadeToggle("slow");
     },5000);
 
+    $(".fruitStand").on('click', ".startFruit", function(){
+        $(".displayFruitstand").toggleClass("hidden");
+    });
 });
