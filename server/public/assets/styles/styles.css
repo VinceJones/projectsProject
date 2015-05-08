@@ -8,3 +8,8 @@
 .content p {
     color: white;
 }
+
+img {
+    display: block;
+    margin: 0px auto;
+}

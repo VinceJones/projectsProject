@@ -29,7 +29,7 @@ $(document).ready(function(){
             i = 0;
         }
         $(".sewPics").hide().html(sewingPicArray[i]);
-        $(".sewPics").fadeToggle();
+        $(".sewPics").fadeToggle("slow");
     },5000);
 
     $(".cookPics").html(cookPicArray[0]);
@@ -39,7 +39,7 @@ $(document).ready(function(){
             j = 0;
         }
         $(".cookPics").hide().html(cookPicArray[j]);
-        $(".cookPics").fadeToggle();
+        $(".cookPics").fadeToggle("slow");
     },5000);
 
     $(".campPics").html(campPicArray[0]);
@@ -49,7 +49,7 @@ $(document).ready(function(){
             k = 0;
         }
         $(".campPics").hide().html(campPicArray[k]);
-        $(".campPics").fadeToggle();
+        $(".campPics").fadeToggle("slow");
     },5000);
 
 });
