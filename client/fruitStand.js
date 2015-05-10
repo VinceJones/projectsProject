@@ -1,6 +1,6 @@
  var i;
- var min = 0;
- var sec = 10;
+ var min;
+ var sec;
 
     var value;
     var appleArray = [];
@@ -93,7 +93,7 @@
              } else {
                  $(".timeDisplay").html("Times Up!");
                  $(".displayFruitstand").empty();
-                 $(".displayFruitstand").html("You made $" + User.cash +"! Way to go!");
+                 $(".endGame").html("<h2>You made $" + User.cash +"! Way to go!</h2>");
              }
          },1000);
 
@@ -102,6 +102,8 @@
     $(document).ready(function(){
 
         $("#openButton").on("click", function () {
+            min = 4;
+            sec = 60;
             timer();
             $(".basket").empty();
             $(".market").empty();

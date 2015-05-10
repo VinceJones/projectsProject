@@ -1,0 +1,25 @@
+{
+  "sewingPics": [
+    {"anorak": "<img src='../assets/images/pinkAnorak.png' height='250px' width='180px'>"},
+    {"anorak": "<img src='../assets/images/blackAnorak.png' height='250px' width='180px'> "},
+    {"anorak": "<img src='../assets/images/whiteAnorak.png' height='250px' width='320px'>"},
+    {"anorak": "<img src='../assets/images/vest.png' height='250px' width='200px'>"}
+  ],
+  "cookingPics": [
+    {"food": "<img src='../assets/images/butcherPig.png' height='250px' width='200px'>"},
+    {"food": "<img src='../assets/images/chopPig.png' height='250px' width='300px'>"},
+    {"food": "<img src='../assets/images/dateGrape.png' height='250px' width='300px'>"},
+    {"food": "<img src='../assets/images/lambDish.png' height='250px' width='300px'>"},
+    {"food": "<img src='../assets/images/chantrelles.png' height='250px' width='300px'>"},
+    {"food": "<img src='../assets/images/prepSalumi.png' height='250px' width='300px'>"},
+    {"food": "<img src='../assets/images/hangSalumi.png' height='250px' width='200px'>"},
+    {"food": "<img src='../assets/images/proscuitto.png' height='250px' width='300px'>"}
+  ],
+  "campingPics": [
+    {"camp": "<img src='../assets/images/campfire.png' height='250px' width='300px'>"},
+    {"camp": "<img src='../assets/images/hammock.png' height='250px' width='225px'>"},
+    {"camp": "<img src='../assets/images/parachute.png' height='250px' width='250px'>"},
+    {"camp": "<img src='../assets/images/loganPass.png' height='250px' width='350px'>"},
+    {"camp": "<img src='../assets/images/yellowStone.png' height='250px' width='350px'>"}
+  ]
+}

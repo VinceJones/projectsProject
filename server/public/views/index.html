@@ -9,7 +9,9 @@
     <script type="text/javascript" src="../vendors/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../assets/scripts/app.min.js"></script>
+
     <script type="text/javascript" src="../assets/scripts/fruitStand.js"></script>
+
 
 </head>
 
@@ -18,50 +20,58 @@
         <h1 class="text-center">Projects</h1>
         <div><p class="lead">These are some of the projects that I work on in my 'spare' time. Some of these
         are done with some of these will never quite be done. But I enjoy doing all them when I can</p></div>
+        <img class="pull-right head" src="../assets/images/arduino.png" height="300px" width="400px">
     </div>
 
     <div role="tabpanel">
     <ul class="nav nav-tabs" role="tablist">
         <li class="active"><a href="#personalInfo" data-toggle="tab">Home</a></li>
+        <li><a href="#resume" data-toggle="tab">Resume</a></li>
         <li><a href="#game" data-toggle="tab">Fruit Stand App</a></li>
         <li class="disabled"><a>Things to come...</a></li>
     </ul>
 
     <div class="tab-content">
-    <div role="tabpanel" class="container tab-pane active content" id="personalInfo">
-        <div class="row">
-            <div class="camping col-md-4">
-                <div class="campPics"></div>
-                <blockquote>I enjoy getting out in the woods. I've mentioned to some people that when I get
-                out in the woods I stop measuring time with normal standards, I prefer to measure in "soup
-                    cycles" (the amount of time it takes to cook soup over an open fire). One of my
-                    favorite yearly camping trips is called the Frozen Butt Hang on the North Shore in
-                    January. I've had fun riding my bicycle over mountains and around the country full loaded with
-                    camping gear.</blockquote>
-            </div>
-            <div class="sewing col-md-4">
-                <div class="sewPics"></div>
-                <blockquote>Over the last two years I've started sewing. I wanted to learn to make my our
-                    camping gear. Eventually I started making wool anoraks that are great for winter
-                    activites. I made one for myself and then those around me liked them enough I now make
-                    them for others as well. Some times they get used to traverse mountains.</blockquote>
-            </div>
-            <div class="cooking col-md-4">
-                <div class="cookPics"></div>
-                <blockquote>After 10 years of cooking professionally I've come to appreciate the complexity
-                of cooking. Everything you do has so many moving parts. Learning to balance flavors and
-                    textures has been a passion of mine. Pork especially has been and intriguing medium to
-                    play around with, I've learned to respect an animal and use it to the best of my abilities.
-                </blockquote>
+        <div role="tabpanel" class="container tab-pane active content" id="personalInfo">
+            <div class="row">
+                <div class="camping col-md-4">
+                    <div class="campPics"></div>
+                    <blockquote>I enjoy getting out in the woods. I've mentioned to some people that when I get
+                    out in the woods I stop measuring time with normal standards, I prefer to measure in "soup
+                        cycles" (the amount of time it takes to cook soup over an open fire). One of my
+                        favorite yearly camping trips is called the Frozen Butt Hang on the North Shore in
+                        January. I've had fun riding my bicycle over mountains and around the country full loaded with
+                        camping gear.</blockquote>
+                </div>
+                <div class="sewing col-md-4">
+                    <div class="sewPics"></div>
+                    <blockquote>Over the last two years I've started sewing. I wanted to learn to make my our
+                        camping gear. Eventually I started making wool anoraks that are great for winter
+                        activites. I made one for myself and then those around me liked them enough I now make
+                        them for others as well. Some times they get used to traverse mountains.</blockquote>
+                </div>
+                <div class="cooking col-md-4">
+                    <div class="cookPics"></div>
+                    <blockquote>After 10 years of cooking professionally I've come to appreciate the complexity
+                    of cooking. Everything you do has so many moving parts. Learning to balance flavors and
+                        textures has been a passion of mine. Pork especially has been and intriguing medium to
+                        play around with, I've learned to respect an animal and use it to the best of my abilities.
+                    </blockquote>
+                </div>
             </div>
         </div>
-    </div>
 
-        <div role="tabpanel" class="fruitStand tab-pane" id="game">
+
+        <div role="tabpanel" class="resumeContent tab-pane" id="resume">
+        </div>
+
+
+        <div role="tabpanel" class="fsaContent tab-pane" id="game">
             <button class="btn-lg btn-warning startFruit">Play Fruit Stand App</button>
-            <blockquote>Fruit Stand App allows you to buy and sell fruit. The goal is to make as much money
-            as you can.</blockquote>
-            <div class="timeDisplay"></div>
+            <p class="lead text-center text-danger">Fruit Stand App allows you to buy and sell fruit. The goal is to make as
+                much money
+                as you can in 5 minutes!</p>
+            <div class="endGame"></div>
             <div class="displayFruitstand hidden">
                 <button id="openButton">Open Market</button>
                 <div class="container">
@@ -73,6 +83,7 @@
 
                     <div class="userDisplay">
                         <h1>Basket</h1>
+                        <div class="timeDisplay"></div>
                         <div class="basket"></div>
                         <div class="cash">
                             <div id="totalCash"></div>
@@ -85,6 +96,8 @@
 
     </div>
     </div>
+
+
 </body>
 
 </html>

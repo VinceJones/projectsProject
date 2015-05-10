@@ -32,8 +32,37 @@ img {
     margin: 0px auto;
 }
 
+.head {
+    margin-right: 20%;
+    box-shadow: 15px 15px 15px #0d3349;
+}
+/*Resume styles*/
+.resume {
+    background-image: url("../images/tweed.png");
+    border-radius: 15px;
+    margin: 10px auto;
+}
+
+.resume h1, h2, h3, h4, h5, h6 {
+    color: #2a9fd6;
+}
+
+.resume p, li {
+    color: #f9f8f6;
+}
+
+.divcontainer {
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    border-color: black;
+    border-radius: 15px;
+}
 
 /* Fruitstand styles*/
+.endGame {
+    text-align: center;
+}
+
 .userDisplay {
     text-align: center;
     width: 49%;

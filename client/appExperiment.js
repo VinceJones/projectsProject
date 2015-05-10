@@ -65,6 +65,63 @@ function displayPics(data) {
     },5000);
 }
 
+// Fruit Market Calls
+// Open Market
+function openMarket() {
+    $.ajax({
+        url: '/openMarket',
+        //data: JSON.stringify(),
+        success: function(response) {
+            var templateData = response;
+            console.log("Success! Template ajax works ", templateData);
+            displayFruitApp(templateData);
+        },
+        complete: function() {
+            console.log("Template ajax complete");
+        },
+        error: function () {
+            console.log("Template ajax epic fail");
+        }
+    });
+}
+// Buy Fruit
+function buyFruit() {
+    $.ajax({
+        url: '/buyFruit',
+        //data: JSON.stringify(),
+        success: function(response) {
+            var templateData = response;
+            console.log("Success! Buyfruit ajax works ", templateData);
+            displayFruitApp(templateData);
+        },
+        complete: function() {
+            console.log("Buyfruit ajax complete");
+        },
+        error: function () {
+            console.log("Buyfruit ajax epic fail");
+        }
+    });
+}
+// Sell Fruit
+function sellFruit() {
+    $.ajax({
+        url: '/sellFruit',
+        //data: JSON.stringify(),
+        success: function(response) {
+            var templateData = response;
+            console.log("Success! SellFruit ajax works ", templateData);
+            displayFruitApp(templateData);
+        },
+        complete: function() {
+            console.log("SellFruit ajax complete");
+        },
+        error: function () {
+            console.log("SellFruit ajax epic fail");
+        }
+    });
+}
+
+
 $(document).ready(function(){
     getPics();
     getTemplate();
@@ -72,5 +129,19 @@ $(document).ready(function(){
     $(".fsaContent").on('click', ".startFruit", function(){
         $(".displayFruitstand").fadeToggle("slow").toggleClass("hidden");
     });
+
+    //-----------Fruit App---------------
+
+    //$("#openButton").on("click", function () {
+    //    openMarket();
+    //});
+    //
+    //$(".market").on('click', '.buyBtn', function () {
+    //    buyFruit();
+    //});
+    //
+    //$('.basket').on('click', '.sellBtn', function () {
+    //    sellFruit();
+    //});
 
 });
