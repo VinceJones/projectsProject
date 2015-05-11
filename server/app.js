@@ -1,26 +1,14 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-
-//Fruit Market App
-//var fruit = require('../server/public/assets/scripts/fruitStandExperiment');
-//
-//app.get('/openMarket', function(request, response){
-//    console.log("Here");
-//    response.send(fruit.openMarket());
-//});
-//
-//app.get('/buyFruit', function(request, response){
-//    console.log("Here");
-//    response.send(fruit.buyFruit());
-//});
-//
-//app.get('/sellFruit', function(request, response){
-//    console.log("Here");
-//    response.send(fruit.sellFruit());
-//});
+var module = require('./module');
 
 app.set('port', (process.env.PORT || 5000));
+
+app.get('/getContact', function(request, response){
+    console.log("/getContact function is happening");
+    response.send(module.contact());
+});
 
 //Get Pictures for Carousel on Homepage
 app.get('/getPics', function(request, response){
@@ -44,4 +32,4 @@ app.get('/*', function(request, response){
 
 app.listen(app.get('port'), function(){
     console.log("App is running on port", app.get('port'));
-})
+});

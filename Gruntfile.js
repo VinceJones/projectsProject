@@ -58,6 +58,14 @@ module.exports = function(grunt) {
                             "fruitStand.js"
                         ],
                         "dest": "server/public/assets/scripts"
+                    },
+                    {
+                        expand: true,
+                        cwd: "client/",
+                        src: [
+                            "module.js"
+                        ],
+                        "dest": "server/"
                     }
                 ]
             }

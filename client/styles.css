@@ -36,6 +36,16 @@ img {
     margin-right: 20%;
     box-shadow: 15px 15px 15px #0d3349;
 }
+
+.socials a {
+    display: inline-block;
+    margin: 15px;
+}
+
+.contactContent {
+    text-align: center;
+}
+
 /*Resume styles*/
 .resume {
     background-image: url("../images/tweed.png");

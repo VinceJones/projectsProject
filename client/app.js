@@ -9,7 +9,7 @@ function getPics() {
         //data: JSON.stringify(),
         success: function(response) {
             var picData = response;
-            console.log("Success! Getting pictures from works ", picData.sewingPics, picData.cookingPics);
+            console.log("Success! Getting pictures from works ");
             displayPics(picData);
         },
         complete: function() {
@@ -19,30 +19,6 @@ function getPics() {
             console.log("Pic ajax epic fail");
         }
     });
-}
-
-// Get Resume HTML
-function getTemplate() {
-    $.ajax({
-        url: '/template',
-        //data: JSON.stringify(),
-        success: function(response) {
-            var templateData = response;
-            console.log("Success! Template ajax works ", templateData);
-            displayFruitApp(templateData);
-        },
-        complete: function() {
-            console.log("Template ajax complete");
-        },
-        error: function () {
-            console.log("Template ajax epic fail");
-        }
-    });
-}
-
-function displayFruitApp(template){
-    $(".resumeContent").append(template);
-
 }
 
 function displayPics(data) {
@@ -65,9 +41,61 @@ function displayPics(data) {
     },5000);
 }
 
+// Get Resume HTML
+function getTemplate() {
+    $.ajax({
+        url: '/template',
+        //data: JSON.stringify(),
+        success: function(response) {
+            var templateData = response;
+            console.log("Success! Resume template works ");
+            displayFruitApp(templateData);
+        },
+        complete: function() {
+            console.log("Template ajax complete");
+        },
+        error: function () {
+            console.log("Template ajax epic fail");
+        }
+    });
+}
+
+function displayFruitApp(template){
+    $(".resumeContent").append(template);
+
+}
+
+// Get contact info
+function getContactInfo() {
+    $.ajax({
+        url: '/getContact',
+        data: JSON.stringify(),
+        success: function(response) {
+            var data = response;
+            console.log("Success! Contact works ", data);
+            displayContactInfo(data);
+        },
+        complete: function() {
+            console.log("Contact ajax complete");
+        },
+        error: function () {
+            console.log("Contact ajax epic fail");
+        }
+    });
+}
+
+function displayContactInfo(data) {
+    $(".name").append(data.name);
+    $(".email").append(data.email);
+    $(".socials").append("<a href=" + data.github + ">" + data.gitLogo + "</a><a href=" + data.linkedin + ">" + data.linkedinLogo + "</a>");
+    //$(".socials").append("");
+}
+
+
 $(document).ready(function(){
     getPics();
     getTemplate();
+    getContactInfo();
 
     $(".fsaContent").on('click', ".startFruit", function(){
         $(".displayFruitstand").fadeToggle("slow").toggleClass("hidden");
